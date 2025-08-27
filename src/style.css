@@ -48,6 +48,10 @@ form{
     margin-top: 5px;
 }
 
+.generate-recipe:hover{
+    background-color: #e68a00;
+}
+
 .recipe-output{
     margin-top: 20px;
     padding: 10px;
@@ -56,6 +60,7 @@ form{
     box-shadow: #FFC900 0px 0px 5px;
     font-family: monospace;
 }
+
 footer{
     text-align: center;
     font-size: 14px;
