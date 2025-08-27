@@ -1,12 +1,15 @@
 body{
-    background-color: #f3d8be;
+    background-image: url("https://i.postimg.cc/KY1q12Kj/Ghibli-Food.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 header{
     text-align: center;
     font-size: 20px;
     font-weight: bold;
-    color: #6B4226;
+    color: #e4934d;
     margin-bottom: 20px;
     font-family: monospace;
 }
@@ -15,53 +18,55 @@ header{
     max-width: 600px;
     margin: 0 auto;
     padding: 50px;
-    background-color: #f7c16b;
+    background-color: rgba(219, 216, 209, 0.6); /* semi-transparent */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1px); /* add blur effect */
 }
 
 form{
-    margin: 20px;
+    margin: 10px;
     padding: 10px;
 }
 
 .recipe-name{
-    width: 60%;
+    width: 50%;
     padding: 10px;
     margin-bottom: 10px;
     border: none;
     border-radius: 10px;
     font-size: 16px;
-    color: #6B4226;
-    box-shadow: #FFC900 0px 0px 5px;
-    background-color: #f3d8be;
+    background-color: rgba(219, 216, 209, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: black
 }
 
 .generate-recipe{
+    margin-top: 5px;
+    margin-left: 10px;
     padding: 10px 20px;
-    background-color: #f3d8be;
-    color: black;
     border: none;
     border-radius: 10px;
     font-size: 16px;
     cursor: pointer;
-    box-shadow: #FF9B00 0px 0px 5px;
-    margin-top: 5px;
+    background-color: rgba(219, 216, 209, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: black    
 }
 
 .generate-recipe:hover{
-    background-color: #ac937c;
+    background-color:rgb(197, 197, 197);
 }
 
 .recipe-output{
     margin-top: 20px;
     padding: 10px;
-    background-color: #f3d8be;
     border-radius: 4px;
-    box-shadow: #FFC900 0px 0px 5px;
     font-family: monospace;
+    font-weight: bold;
     font-size: 16px;
-    color: #6B4226;
+    color: black;
+    border: gray solid 1px;
 }
 
 .emoji{
@@ -81,7 +86,7 @@ form{
 footer{
     text-align: center;
     font-size: 14px;
-    color: #666;
+    color: black;
     margin-top: 20px;
     font-family: monospace;
 }
