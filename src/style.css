@@ -1,12 +1,12 @@
 body{
-    background-color: #EBE389;
+    background-color: #f3d8be;
 }
 
 header{
     text-align: center;
     font-size: 20px;
     font-weight: bold;
-    color: #333;
+    color: #6B4226;
     margin-bottom: 20px;
     font-family: monospace;
 }
@@ -15,8 +15,8 @@ header{
     max-width: 600px;
     margin: 0 auto;
     padding: 50px;
-    background-color: #FFE100;
-    border-radius: 8px;
+    background-color: #f7c16b;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -29,16 +29,17 @@ form{
     width: 60%;
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #FFC900;
+    border: none;
     border-radius: 10px;
     font-size: 16px;
+    color: #6B4226;
     box-shadow: #FFC900 0px 0px 5px;
-    background-color: #EBE389;
+    background-color: #f3d8be;
 }
 
 .generate-recipe{
     padding: 10px 20px;
-    background-color: #EBE389;
+    background-color: #f3d8be;
     color: black;
     border: none;
     border-radius: 10px;
@@ -49,17 +50,18 @@ form{
 }
 
 .generate-recipe:hover{
-    background-color: #b6af69;
+    background-color: #ac937c;
 }
 
 .recipe-output{
     margin-top: 20px;
     padding: 10px;
-    background-color: #EBE389;
+    background-color: #f3d8be;
     border-radius: 4px;
     box-shadow: #FFC900 0px 0px 5px;
     font-family: monospace;
     font-size: 16px;
+    color: #6B4226;
 }
 
 .emoji{
