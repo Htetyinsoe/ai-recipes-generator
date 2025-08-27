@@ -30,7 +30,7 @@ form{
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #FFC900;
-    border-radius: 4px;
+    border-radius: 10px;
     font-size: 16px;
     box-shadow: #FFC900 0px 0px 5px;
     background-color: #EBE389;
@@ -38,7 +38,7 @@ form{
 
 .generate-recipe{
     padding: 10px 20px;
-    background-color: #FF9B00;
+    background-color: #EBE389;
     color: black;
     border: none;
     border-radius: 20px;
@@ -49,7 +49,7 @@ form{
 }
 
 .generate-recipe:hover{
-    background-color: #e68a00;
+    background-color: #b6af69;
 }
 
 .recipe-output{
@@ -59,6 +59,8 @@ form{
     border-radius: 4px;
     box-shadow: #FFC900 0px 0px 5px;
     font-family: monospace;
+    text-align: center;
+    font-size: 16px;
 }
 
 footer{
