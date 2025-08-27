@@ -41,7 +41,7 @@ form{
     background-color: #EBE389;
     color: black;
     border: none;
-    border-radius: 20px;
+    border-radius: 10px;
     font-size: 16px;
     cursor: pointer;
     box-shadow: #FF9B00 0px 0px 5px;
@@ -60,6 +60,20 @@ form{
     box-shadow: #FFC900 0px 0px 5px;
     font-family: monospace;
     font-size: 16px;
+}
+
+.emoji{
+    font-size: 60px;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.emoji2{
+    font-size: 60px;
+    text-align: right;
+    margin-right: 20px;
+    margin-top: 5px;
 }
 
 footer{
