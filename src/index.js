@@ -4,7 +4,7 @@ function displayRecipe(response) {
 
   new Typewriter(recipeOutputElement, {
     autoStart: true,
-    delay: 1,
+    delay: 20,
     loop: false,
     cursor: " " 
   })
@@ -20,6 +20,10 @@ function generateRecipe(event) {
     let context = `You are a world-class chef and will generate a recipe based on the recipe name or ingredient/s provided by the user.The recipe must include the following sections, each clearly separated by line breaks:- Recipe Name- Ingredients- Instructions- Notes. Each section must be divided by line breaks. Use appropriate emojis for the recipe name and ingredients.Do not format the recipe as a paragraph. Do not include any extra commentary or explanation.Keep the recipe simple, clear, and easy to follow. Do not display recipes like a paragraph. Display it like a lists with line breaks. Make sure your recipe is align with user's ingredients or recipe name. Lists the instructions, list the ingredients, and list the note. List all with bullet points. Add line break, br tag after every lines and every ingredients. Add the br element every line for clear display. Aligh the heading like, recipe name, ingredients etc in the center. Your recipe is not exactly align with user keywords. Make sure your recipe is appropriately align with the user's keywords, ingredients or recipe names. Make sure your recipe is at least align with one of the user's keywords. For example, if the user type egg, your recipe must have egg as an ingredients. Behave and follow my instructions. Sign the recipe with "SheCode" at the end using a <strong> tag.`;
     let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+    let recipeElement = document.querySelector("#recipe-output");
+    recipeElement.classList.remove("hidden");
+    recipeElement.innerHTML = `<div class = "blink_me">Generating your recipe...⌛</div>`;
+    
     
     axios.get(apiUrl).then(displayRecipe);
    

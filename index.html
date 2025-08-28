@@ -11,20 +11,17 @@
 </head>
 <body>
     <header>
-         <h1>Welcome to Ai-Recipes-Generator👨‍🍳</h1>
+         <h1>Welcome to Ai-Recipes-Generator</h1>
     </header>
    
     <div class="container">
     <main>
         <form id="recipe-form">
-            <input type="text" placeholder="Enter the recipe you want📝"required class="recipe-name" autofocus autocomplete="off" id="instruction"/>
+            <input type="text" placeholder="Enter the recipe or ingredients✒️"required class="recipe-name" autofocus autocomplete="off" id="instruction"/>
         <input type="submit" value="Generate Recipe👨‍🍳" class="generate-recipe"/>
         </form>
-
-        <div class="recipe-output" id="recipe-output">
-            <small>Please wait at least 30 secs to generate the recipe once you enter the recipe⌛....</small>
-        <p>Your generated recipe will appear here...</p>
-        </div>
+        <div class="hint">Eg. eggs or chincken curry</div>
+        <div class="recipe-output hidden" id="recipe-output"></div>
     </main>
    </div>
    <footer>This app is coded by <a href="https://github.com/Htetyinsoe" target="_blank">Htet Yin Yin Soe</a>, is open-sourced <a href="https://github.com/Htetyinsoe/ai-recipes-generator" target="_blank">on Git Hub,</a> and deployed on <a href="https://ai-recipes-generator.vercel.app/" target="_blank">vercel</a>.</footer>
